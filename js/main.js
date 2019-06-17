@@ -22,19 +22,35 @@ var markers = []
 //   });
 // }
 
+//***************************************** */
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-      navigator.serviceWorker.register('js/sw/sw.js').then(function() {
-    // navigator.serviceWorker.register('./sw.js').then(function() {
-          // Registration was successful
-          console.log('Service Worker registration successful with scope: ');
-      }, function(err) {
-          // registration failed :(
-          console.log('ServiceWorker registration failed:', err);
-      });
-  });
-}
+// if ('serviceWorker' in navigator) {
+//   window.addEventListener('load', function() {
+//       // navigator.serviceWorker.register('js/sw/sw.js').then(function() {
+//     navigator.serviceWorker.register('js/sw/index.js').then(function(registration) {
+//           // Registration was successful
+//           console.log('Service Worker registration successful with scope:', registration);
+//       }, function(err) {
+//           // registration failed :(
+//           console.log('ServiceWorker registration failed:', err);
+//       });
+//   });
+// }
+
+//**************************************************** */
+
+// if ('serviceWorker' in navigator) {
+//   window.addEventListener('load', function() {
+//       // navigator.serviceWorker.register('js/sw/sw.js').then(function() {
+//     navigator.serviceWorker.register('./service-worker.js', { scope: './'}).then(function(registration) {
+//           // Registration was successful
+//           console.log('Service Worker registration successful with scope:', registration);
+//       }, function(err) {
+//           // registration failed :(
+//           console.log('ServiceWorker registration failed:', err);
+//       });
+//   });
+// }
 
 
 /*
